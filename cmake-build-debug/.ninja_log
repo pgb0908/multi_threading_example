@@ -1,0 +1,6 @@
+# ninja log v5
+1	392	1721013411386344442	chap04/CMakeFiles/chap04_main.dir/main.cpp.o	d13c1559918843a
+1	263	1721013411258344494	chap04/CMakeFiles/chap04_main.dir/request.cpp.o	6829dcb27b1dae50
+0	466	1721006860488485268	chap04/CMakeFiles/chap04_main.dir/dispatcher.cpp.o	e4b9ed146a0d5ede
+392	444	1721013411438344421	chap04/chap04_main	806bad615aeeddd3
+1	264	1721006860284484508	chap04/CMakeFiles/chap04_main.dir/worker.cpp.o	f558bc0fd5783b6b
