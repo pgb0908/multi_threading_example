@@ -139,7 +139,7 @@ ch05_test01: cmake_check_build_system
 
 # fast build rule for target.
 ch05_test01/fast:
-	$(MAKE) $(MAKESILENT) -f chap05/test01/CMakeFiles/ch05_test01.dir/build.make chap05/test01/CMakeFiles/ch05_test01.dir/build
+	$(MAKE) $(MAKESILENT) -f chap05/thread_id/CMakeFiles/ch05_test01.dir/build.make chap05/thread_id/CMakeFiles/ch05_test01.dir/build
 .PHONY : ch05_test01/fast
 
 #=============================================================================
@@ -152,7 +152,7 @@ ch05_test02: cmake_check_build_system
 
 # fast build rule for target.
 ch05_test02/fast:
-	$(MAKE) $(MAKESILENT) -f chap05/test02/CMakeFiles/ch05_test02.dir/build.make chap05/test02/CMakeFiles/ch05_test02.dir/build
+	$(MAKE) $(MAKESILENT) -f chap05/thread_sleep_for/CMakeFiles/ch05_test02.dir/build.make chap05/thread_sleep_for/CMakeFiles/ch05_test02.dir/build
 .PHONY : ch05_test02/fast
 
 #=============================================================================
@@ -165,7 +165,7 @@ ch05_test03: cmake_check_build_system
 
 # fast build rule for target.
 ch05_test03/fast:
-	$(MAKE) $(MAKESILENT) -f chap05/test03/CMakeFiles/ch05_test03.dir/build.make chap05/test03/CMakeFiles/ch05_test03.dir/build
+	$(MAKE) $(MAKESILENT) -f chap05/thread_sleep_for2/CMakeFiles/ch05_test03.dir/build.make chap05/thread_sleep_for2/CMakeFiles/ch05_test03.dir/build
 .PHONY : ch05_test03/fast
 
 #=============================================================================
@@ -178,7 +178,7 @@ ch05_test04: cmake_check_build_system
 
 # fast build rule for target.
 ch05_test04/fast:
-	$(MAKE) $(MAKESILENT) -f chap05/test04/CMakeFiles/ch05_test04.dir/build.make chap05/test04/CMakeFiles/ch05_test04.dir/build
+	$(MAKE) $(MAKESILENT) -f chap05/unsafe_lock/CMakeFiles/ch05_test04.dir/build.make chap05/unsafe_lock/CMakeFiles/ch05_test04.dir/build
 .PHONY : ch05_test04/fast
 
 #=============================================================================
@@ -191,7 +191,7 @@ ch05_test05: cmake_check_build_system
 
 # fast build rule for target.
 ch05_test05/fast:
-	$(MAKE) $(MAKESILENT) -f chap05/test05/CMakeFiles/ch05_test05.dir/build.make chap05/test05/CMakeFiles/ch05_test05.dir/build
+	$(MAKE) $(MAKESILENT) -f chap05/safe_lock/CMakeFiles/ch05_test05.dir/build.make chap05/safe_lock/CMakeFiles/ch05_test05.dir/build
 .PHONY : ch05_test05/fast
 
 #=============================================================================
@@ -204,7 +204,7 @@ ch05_test06: cmake_check_build_system
 
 # fast build rule for target.
 ch05_test06/fast:
-	$(MAKE) $(MAKESILENT) -f chap05/test06/CMakeFiles/ch05_test06.dir/build.make chap05/test06/CMakeFiles/ch05_test06.dir/build
+	$(MAKE) $(MAKESILENT) -f chap05/try_lock/CMakeFiles/ch05_test06.dir/build.make chap05/try_lock/CMakeFiles/ch05_test06.dir/build
 .PHONY : ch05_test06/fast
 
 #=============================================================================
@@ -217,7 +217,7 @@ ch05_test07: cmake_check_build_system
 
 # fast build rule for target.
 ch05_test07/fast:
-	$(MAKE) $(MAKESILENT) -f chap05/test07/CMakeFiles/ch05_test07.dir/build.make chap05/test07/CMakeFiles/ch05_test07.dir/build
+	$(MAKE) $(MAKESILENT) -f chap05/lock_guard/CMakeFiles/ch05_test07.dir/build.make chap05/lock_guard/CMakeFiles/ch05_test07.dir/build
 .PHONY : ch05_test07/fast
 
 #=============================================================================
@@ -230,7 +230,7 @@ ch05_test08: cmake_check_build_system
 
 # fast build rule for target.
 ch05_test08/fast:
-	$(MAKE) $(MAKESILENT) -f chap05/test08/CMakeFiles/ch05_test08.dir/build.make chap05/test08/CMakeFiles/ch05_test08.dir/build
+	$(MAKE) $(MAKESILENT) -f chap05/packaged_task/CMakeFiles/ch05_test08.dir/build.make chap05/packaged_task/CMakeFiles/ch05_test08.dir/build
 .PHONY : ch05_test08/fast
 
 #=============================================================================
@@ -243,7 +243,7 @@ ch05_test09: cmake_check_build_system
 
 # fast build rule for target.
 ch05_test09/fast:
-	$(MAKE) $(MAKESILENT) -f chap05/test09/CMakeFiles/ch05_test09.dir/build.make chap05/test09/CMakeFiles/ch05_test09.dir/build
+	$(MAKE) $(MAKESILENT) -f chap05/async_future/CMakeFiles/ch05_test09.dir/build.make chap05/async_future/CMakeFiles/ch05_test09.dir/build
 .PHONY : ch05_test09/fast
 
 # Help Target

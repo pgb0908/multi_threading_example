@@ -44,46 +44,46 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/test01/cmake_install.cmake")
+  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/thread_id/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/test02/cmake_install.cmake")
+  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/thread_sleep_for/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/test03/cmake_install.cmake")
+  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/thread_sleep_for2/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/test04/cmake_install.cmake")
+  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/unsafe_lock/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/test05/cmake_install.cmake")
+  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/safe_lock/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/test06/cmake_install.cmake")
+  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/try_lock/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/test07/cmake_install.cmake")
+  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/lock_guard/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/test08/cmake_install.cmake")
+  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/packaged_task/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/test09/cmake_install.cmake")
+  include("/home/bont/CLionProjects/multi_threading/cmake-build-debug/chap05/async_future/cmake_install.cmake")
 endif()
 
