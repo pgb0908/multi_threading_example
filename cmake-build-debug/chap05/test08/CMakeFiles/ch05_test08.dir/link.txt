@@ -1,1 +1,0 @@
-/usr/bin/c++ -pthread -g CMakeFiles/ch05_test08.dir/code1.cpp.o -o ch05_test08 
