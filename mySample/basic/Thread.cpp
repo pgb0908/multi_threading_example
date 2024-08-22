@@ -37,22 +37,21 @@ struct ThreadData
     ThreadFunc func_;
     std::string name_;
     pid_t& tid_;
-    //CountDownLatch* latch_;
+    CountDownLatch& latch_;
 
     ThreadData(ThreadFunc func,
                std::string name,
-               pid_t& tid)
+               pid_t& tid, CountDownLatch& latch)
             : func_(std::move(func)),
               name_(std::move(name)),
-              tid_(tid)
+              tid_(tid),
+              latch_(latch)
     { }
 
     void runInThread() const
     {
         tid_ = CurrentThread::tid();
-        //tid_ = nullptr;
-        //latch_->countDown();
-        //latch_ = NULL;
+        latch_.countDown();
 
         CurrentThread::t_threadName = name_.empty() ? "Thread" : name_.c_str();
         ::prctl(PR_SET_NAME, CurrentThread::t_threadName);
@@ -94,7 +93,8 @@ Thread::Thread(ThreadFunc func, std::string name)
           tid_(0),
           threadId_(),
           func_(std::move(func)),
-          name_(std::move(name)){
+          name_(std::move(name)),
+          latch_(1){
 
     int num = numCreated_.fetch_add(1);
     if (name_.empty())
@@ -110,10 +110,13 @@ void Thread::start() {
     assert(!started_);
 
     started_ = true;
-    auto data = std::make_shared<ThreadData>(func_, name_, tid_);
-    t_ = std::thread([data, this](){
+    auto data = std::make_shared<ThreadData>(func_, name_, tid_, latch_);
+    t_ = std::thread([data](){
         data->runInThread();
     });
+
+    // runInThread 무사히 끝날때까지 제어
+    latch_.wait();
 
     assert(tid_ > 0);
 }

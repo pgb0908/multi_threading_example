@@ -9,6 +9,7 @@
 #include <string>
 #include <functional>
 #include <atomic>
+#include "CountDownLatch.h"
 
 
 using ThreadFunc = std::function<void ()>;
@@ -36,6 +37,7 @@ private:
     std::thread t_;
     ThreadFunc func_;
     std::string name_;
+    CountDownLatch latch_;
 
 
     static std::atomic<int32_t> numCreated_;
