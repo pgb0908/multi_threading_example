@@ -6,4 +6,6 @@ add_library(basic
 
 )
 
+set(CMAKE_CXX_FLAGS -pthread)
+
 add_subdirectory(test)
