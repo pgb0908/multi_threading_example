@@ -6,8 +6,8 @@
 #include <iostream>
 #include "../Thread.h"
 
-const int threadCount = 1;
-CountDownLatch latch(threadCount);
+const int threadCount = 3;
+CountDownLatch latch(3);
 
 void worker() {
     std::cout << "worker doing job... \n";
@@ -16,13 +16,14 @@ void worker() {
 
 int main() {
     std::vector<std::shared_ptr<Thread>> threads;
-    for (int i = 0; i < threadCount; ++i) {
+    for (int i = 0; i < 5; ++i) {
         auto t1 = std::make_shared<Thread>(worker);
         t1->start();
         threads.push_back(t1);
+        std::this_thread::sleep_for(std::chrono::microseconds (500)); // Simulate work
     }
 
-    std::this_thread::sleep_for(std::chrono::seconds(3)); // Simulate work
+  //  std::this_thread::sleep_for(std::chrono::seconds(1)); // Simulate work
     latch.wait(); // Wait for all threads to finish
     std::cout << "All workers have finished. Proceeding...\n";
 

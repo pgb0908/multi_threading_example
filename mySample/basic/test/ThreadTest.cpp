@@ -54,7 +54,7 @@ int main() {
 
     std::cout << "is main thread?? : " << (CurrentThread::isMainThread() ? "yes": "no") << std::endl;
 
-/*    Thread t2(std::bind(threadFunc2, 42),
+    Thread t2(std::bind(threadFunc2, 42),
                      "thread for free function with argument");
     t2.start();
     printf("t2.tid=%d\n", t2.tid());
@@ -64,7 +64,7 @@ int main() {
     Thread t3(std::bind(&Foo::memberFunc, &foo),
                      "thread for member function without argument");
     t3.start();
-    t3.join();*/
+    t3.join();
 
     return 0;
 }//

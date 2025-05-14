@@ -15,12 +15,11 @@ bool is_prime(int x) {
 }
 
 int main() {
-    future<bool> pFuture = std::async(is_prime, 343321);
+    future<bool> pFuture = std::async(std::launch::async, is_prime, 343321);
 
     cout << "Checking whether 343321 is a prime number.\n";
 
     // Wait for future object to be ready.
-
     bool result = pFuture.get();
     if (result) {
         cout << "Prime found.\n";
